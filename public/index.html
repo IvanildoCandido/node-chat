@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Node Chat - Socket</title>
+  </head>
+  <body>
+    <div class="page" id="login-page">
+      <h1>Qual o seu nome?</h1>
+      <input
+        type="text"
+        id="login-name"
+        placeholder="Digite seu nome e tecle ENTER..."
+      />
+    </div>
+    <div class="page" id="chat-page">
+      <div class="chat-area">
+        <ul class="chat-list"></ul>
+        <ul class="user-list"></ul>
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder='digite uma mensagem e pressione "ENTER"...'
+        />
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
